@@ -10,7 +10,8 @@ import java.util.concurrent.TimeoutException;
  * @author F190010
  * @date 2023/1/17
  */
-@RestController("/test")
+@RestController("")
+@RequestMapping("/test")
 public class MqController {
     @RequestMapping("/test")
     public Object mq() throws IOException, TimeoutException {
