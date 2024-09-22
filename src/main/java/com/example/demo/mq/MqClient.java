@@ -1,6 +1,5 @@
 package com.example.demo.mq;
 
-import com.rabbitmq.client.*;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -13,7 +12,7 @@ import java.util.concurrent.TimeoutException;
  * @date 2023/1/17
  */
 public class MqClient {
-    public static void main(String[] args) throws IOException, TimeoutException {
+   /* public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         Connection connect = factory.newConnection();
         Channel channel = connect.createChannel();
@@ -26,5 +25,5 @@ public class MqClient {
                 this.getChannel().basicAck(envelope.getDeliveryTag(), false);
             }
         });
-    }
+    }*/
 }

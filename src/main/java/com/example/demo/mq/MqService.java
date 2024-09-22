@@ -1,9 +1,5 @@
 package com.example.demo.mq;
 
-import com.rabbitmq.client.AMQP;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
@@ -13,7 +9,7 @@ import java.util.concurrent.TimeoutException;
  * @date 2023/1/17
  */
 public class MqService {
-    public static void main(String[] args) throws IOException, TimeoutException {
+   /* public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         Connection connect = factory.newConnection();
         String exchangeName= "testExchange";
@@ -25,5 +21,5 @@ public class MqService {
         channel.queueBind(queueName, exchangeName, routingkey);
         channel.basicPublish(exchangeName, routingkey, null, "haohaode".getBytes());
 
-    }
+    }*/
 }
