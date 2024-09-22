@@ -1,0 +1,7 @@
+FROM java:latest
+LABEL
+auth=Bob
+COPY demo-0.0.1-SNAPSHOT.jar /root/jar/
+RUN chmod 777 *.jar
+WORKDIR /root/jar
+ENTRYPOINT ["nohup java -jar /root/jar/demo-0.0.1-SNAPSHOT.jar > f 2>&1 &"]
